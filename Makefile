@@ -1,14 +1,10 @@
-#NAME: Matthew Dalton
-#EMAIL: mattdalton@g.ucla.edu
-#ID: 304964539
-
 CC=gcc
 CFLAGS=-I -Wall -Wextra -g -std=c11 -D_POSIX_C_SOURCE -std=gnu99
 
 simpsh: source_files/simpsh.c
-	$(CC) $(CFLAGS) -o  simpsh  source_files/dynamic_int_array.h  source_files/dynamic_string_array.h  source_files/dynamic_pid_array.h  source_files/simpsh.c  source_files/file_openings.h  source_files/file_openings.c  source_files/subcommands.h  source_files/subcommands.c
+	$(CC) $(CFLAGS) -o  simpsh  dynamic_int_array.h  dynamic_string_array.h  dynamic_pid_array.h  simpsh.c  file_openings.h  file_openings.c  subcommands.h  subcommands.c
 
-.PHONY: clean
+.PHONY: clean 
 
 clean:
 	rm -f simpsh lab1-304964539.tar.gz
@@ -16,8 +12,9 @@ clean:
 .PHONY: dist
 
 dist:
-	tar -cvzf lab1-304964539.tar.gz  README  Makefile source_files/dynamic_int_array.h  source_files/dynamic_string_array.h  source_files/dynamic_pid_array.h  source_files/simpsh.c  source_files/file_openings.h  source_files/file_openings.c  source_files/subcommands.h  source_files/subcommands.c Report.pdf
+	tar -cvzf lab1-ID_NUMBER.tar.gz  README  Makefile dynamic_int_array.h  dynamic_string_array.h  dynamic_pid_array.h  simpsh.c  file_openings.h  file_openings.c  subcommands.h  subcommands.c
 
+# add test cases to add functionality for check command
 .PHONY: check
 
 check:
