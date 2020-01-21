@@ -1,9 +1,3 @@
-/*
-NAME: Matthew Dalton
-EMAIL: mattdalton@g.ucla.edu
-UID: 304964539
-*/
-
 #define _GNU_SOURCE
 
 /*My Header Files*/
