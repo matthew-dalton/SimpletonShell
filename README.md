@@ -39,40 +39,39 @@ It then creates three subprocesses:
 
 #### Flags for file openings:
 
-```
---append
+`--append`
 O_APPEND
 
---cloexec
+`--cloexec`
 O_CLOEXEC
 
---creat
+`--creat`
 O_CREAT
 
---directory
+`--directory`
 O_DIRECTORY
 
---dsync
+`--dsync`
 O_DSYNC
 
---excl
+`--excl`
 O_EXCL
 
---nofollow
+`--nofollow`
 O_NOFOLLOW
 
---nonblock
+`--nonblock`
 O_NONBLOCK
 
---rsync
+`--rsync`
 O_RSYNC
 
---sync
+`--sync`
 O_SYNC
 
---trunc
+`--trunc`
 O_TRUNC
-```
+
 
 #### File-opening Options:
 
