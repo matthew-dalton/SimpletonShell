@@ -46,7 +46,7 @@ It then creates three subprocesses:
 
 ### Description of Options
 
-##### Flags for file openings:
+#### Flags for file openings:
 
 --append
 O_APPEND
@@ -82,7 +82,7 @@ O_SYNC
 O_TRUNC
 
 
-##### File-opening Options:
+#### File-opening Options:
 
 --rdonly f
 
@@ -100,7 +100,7 @@ O_WRONLY. Open the file f for writing only.
 
 Open a pipe. Unlike the other file options, this option does not take an argument. Also, it consumes two file numbers, not just one.
 
-##### Subcommand Options:
+#### Subcommand Options:
 
 --command i o e cmd args
 
@@ -110,7 +110,7 @@ Execute a command with standard input i, standard output o and standard error e;
 
 Wait for all commands to finish. As each finishes, output its exit status or signal number as described above, and a copy of the command (with spaces separating arguments) to standard output.
 
-##### Miscellaneous Options:
+#### Miscellaneous Options:
 
 --close N
 
